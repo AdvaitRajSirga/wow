@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class 5E Feedback Form</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="app.css" />
+		<link rel="stylesheet"
+        href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
+	</head>
+	<body>
+		<div class="feedback-container">
+			<form method="post">
+				<h1>Hello Class 5E !! </h1>
+				<br><br>
+				<h1>Facing Any Issues ?</h1>
+				<h1>Please fill the form</h1>
+				<label for="username">Name</label>
+				<input type="text" name="Name" placeholder="Enter full name" required />
+				<p></p>
+				<label for="email">Email</label>
+				<input type="email" name="Email" placeholder="example@gmail.com" required/>
+				<br><br>
+				<p>Designation</p>
+				<label for="student">Student</label>
+				<input type="checkbox" name="student" />
+				<label for="teacher">Teacher</label>
+				<input type="checkbox" name="teacher" />
+				<br></br>
+				<p>Gender</p>
+				<label for="Male">Male</label>
+				<input type="checkbox" name="Male" >
+				<label for="female">Female</label>
+				<input type="checkbox" name="female"/>
+				<br><br>
+				<label name for="username1">Description</label> <br><br>
+				<textarea required id="username1" name="Issue" placeholder="Please tell what is the issue"> </textarea>
+				</div>
+				<br><br>
+				<div class="button">
+					<button type="submit" class="full">Submit</button> 
+				</div>
+			</form>
+		</div>
+		<script src="server.js"></script>
+	</body>
+</html>
