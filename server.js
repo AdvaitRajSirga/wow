@@ -5,9 +5,11 @@ const nodemailer = require('nodemailer');
 const { stringify } = require("querystring");
 
 
-app.listen(3000, () => {
-    console.log("Application started and Listening on port 3000");
-  });
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
+
   app.use(express.static(__dirname + "/app.css"));
 
   app.use(bodyParser.urlencoded({ extended: true }))
